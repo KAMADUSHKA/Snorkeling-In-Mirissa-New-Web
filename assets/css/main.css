@@ -3033,3 +3033,24 @@ section,
   }
 }
 
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-button img {
+  width: 50px; /* Adjust this for size */
+  height: 50px; /* Ensures uniform scaling */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
