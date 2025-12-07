@@ -34,7 +34,7 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.webp" alt="">
+        <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">Snorkeling In Mirissa</h1>
       </a>
 
@@ -57,85 +57,81 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container-fluid hero-container" data-aos="fade-up">
-        <div class="row g-0 align-items-center">
-          
-          <!-- Left Content -->
-          <div class="col-lg-6 content-col">
-            <div class="content-wrapper">
-              
-              <div class="status-badge">Daily Tours Available</div>
-              
-              <h2>Snorkeling in Mirissa – Swim With Turtles & Explore Coral Life</h2>
-              
-              <p>Experience the crystal-clear waters of Mirissa with unforgettable snorkeling and diving adventures. Meet sea turtles, colorful fish, and vibrant reefs with our friendly local guides.</p>
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
 
-              <div class="opening-hours" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-clock"></i>
-                <span>Daily Tours: 7:00 AM – 5:00 PM</span>
-              </div>
-
-              <div class="btn-group">
-                <a href="#book-now" class="btn btn-book">Book Your Tour</a>
-                <a href="#tours" class="btn btn-menu">View All Activities</a>
-              </div>
-
-              <div class="social-links">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Swiper Images -->
-          <div class="col-lg-6 swiper-col">
-            <div class="swiper hero-swiper init-swiper" data-aos="zoom-out" data-aos-delay="100">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 800,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "effect": "fade",
-                  "slidesPerView": 1,
-                  "navigation": {
-                    "nextEl": ".swiper-button-next",
-                    "prevEl": ".swiper-button-prev"
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="img-container">
-                    <img src="assets/img/restaurant/event-7.webp" alt="Snorkeling With Turtles">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-container">
-                    <img src="assets/img/restaurant/event-7.webp" alt="Coral Reef Mirissa">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-container">
-                    <img src="assets/img/restaurant/event-7.webp" alt="Diving in Mirissa">
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-
-        </div>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
       </div>
-    </section>
-    <!-- /Hero Section -->
+
+      <div class="carousel-inner">
+
+        <!-- Turtle Snorkeling -->
+        <div class="carousel-item active slide-1" style="background-image: url('assets/img/snorkeling/Turtle_snorkeling.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-warning text-dark fw-bold">TOP-RATED ADVENTURE</span>
+            <h5 class="mt-3">Turtle Snorkeling in Mirissa</h5>
+            <p>Meet friendly sea turtles up close and explore colorful coral reefs in crystal-clear waters.</p>
+            <a href="#contact" class="btn btn-warning btn-custom">Book Now</a>
+            <a href="#tours" class="btn btn-outline-light btn-custom">See More</a>
+          </div>
+        </div>
+
+        <!-- Scuba Diving -->
+        <div class="carousel-item slide-2" style="background-image: url('assets/img/snorkeling/Scuba_diving.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-warning text-dark fw-bold">TOURS AVAILABLE NOW</span>
+            <h5 class="mt-3">Unforgettable Scuba Diving</h5>
+            <p>Dive deep beneath the waves and discover breathtaking marine life with certified guides.</p>
+            <a href="#contact" class="btn btn-warning btn-custom">Join a Dive</a>
+            <a href="#tours" class="btn btn-outline-light btn-custom">Discover More</a>
+          </div>
+        </div>
+
+        <!-- Fishing Tours -->
+        <div class="carousel-item slide-3" style="background-image: url('assets/img/snorkeling/Fising_tours.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-warning text-dark fw-bold">ADVENTURE AWAITS</span>
+            <h5 class="mt-3">Deep-Sea Fishing Tours</h5>
+            <p>Cast your line into the Indian Ocean and reel in the thrill of a true fishing experience.</p>
+            <a href="#contact" class="btn btn-warning btn-custom">Reserve a Trip</a>
+            <a href="#tours" class="btn btn-outline-light btn-custom">View Tours</a>
+          </div>
+        </div>
+
+        <!-- Whale Watching -->
+        <div class="carousel-item slide-4" style="background-image: url('assets/img/snorkeling/whale_watching.jpg');">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption text-center">
+            <span class="badge bg-warning text-dark fw-bold">POPULAR EXPERIENCE</span>
+            <h5 class="mt-3">Whale & Dolphin Watching</h5>
+            <p>See majestic blue whales and playful dolphins in their natural ocean home.</p>
+            <a href="#contact" class="btn btn-warning btn-custom">Book Seats</a>
+            <a href="#tours" class="btn btn-outline-light btn-custom">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+    
+    <!-- Turtle Animation -->
+    <img src="assets/img/snorkeling/turtle_swim.gif" class="turtle-swim" id="turtle" alt="Swimming Turtle">
 
 
     <!-- About Section -->
@@ -160,7 +156,7 @@
               <div class="chef-signature mt-4">
                 <div class="row align-items-center">
                   <div class="col-auto">
-                    <img src="assets/img/snorkeling/guide-1.webp" class="chef-avatar rounded-circle" alt="Snorkeling Guide">
+                    <img src="assets/img/logo.png" class="chef-avatar rounded-circle" alt="Snorkeling Guide">
                   </div>
                   <div class="col">
                     <p class="chef-message mb-2">
@@ -177,9 +173,9 @@
           <!-- Right Images -->
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="about-image-wrapper">
-              <img src="assets/img/snorkeling/turtle-spot-1.webp" class="img-fluid main-image shadow" alt="Snorkeling with Turtles">
-              <img src="assets/img/snorkeling/reef-view-2.webp" class="img-fluid accent-image shadow" alt="Mirissa Coral Reef">
-              <span class="establishment-year d-flex align-items-center justify-content-center text-center">Est. 2015</span>
+              <img src="assets/img/snorkeling/Fising_tours.jpg" class="img-fluid main-image shadow" alt="Snorkeling with Turtles">
+              <img src="assets/img/snorkeling/Scuba_diving.jpg" class="img-fluid accent-image shadow" alt="Mirissa Coral Reef">
+              <span class="establishment-year d-flex align-items-center justify-content-center text-center">10+ years</span>
             </div>
           </div>
 
@@ -244,16 +240,9 @@
 
               <div class="stat-item">
                 <span class="stat-number">
-                  <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="0" class="purecounter">7</span>
+                  <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="0" class="purecounter">10</span>+
                 </span>
                 <p class="stat-label">Professional Guides</p>
-              </div>
-
-              <div class="stat-item">
-                <span class="stat-number">
-                  <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="0" class="purecounter">12</span>
-                </span>
-                <p class="stat-label">Snorkeling Spots</p>
               </div>
 
               <div class="stat-item">
@@ -272,14 +261,88 @@
     </section>
     <!-- /About Section -->
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu section">
+
+    <!-- Special Turtle Snorkeling Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 mb-5 ms-1 me-1 pb-3 turtle_snorkeling">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="reservation-info">
+              <div class="text-content">
+                <h3  class="text-warning" style="text-shadow: 0 0 12px rgba(255, 208, 0, 0.65);">Special Turtle Snorkeling</h3>
+                <p>Enjoy a guided snorkeling adventure with Mirissa’s amazing sea turtles. 
+                  Safe, fun, and perfect for all skill levels!</p>
+
+                <div class="reservation-details mt-4">
+                  <div class="detail-item">
+                    <i class="bi bi-clock"></i>
+                    <div>
+                      <h5>Tour Duration</h5>
+                      <p>2 Hours • Morning Tours Available (7.00AM - 1.00PM)</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <h5>Meeting Point</h5>
+                      <p><a href="https://share.google/w1ZmnjdnxqLOq2x1d" target="_blank">Snorkeling In Mirissa, Mirissa, Sri Lanka</a></p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <h5>WhatsApp Booking</h5>
+                      <p><a href="https://wa.me/+94719457757" target="_blank">+94 71 945 7757</a></p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <i class="bi bi-check-circle"></i>
+                    <div>
+                      <h5>Included</h5>
+                      <p>• Best Snorkeling Gear • Safety Jackets • Guide</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <i class="bi bi-check-circle"></i>
+                    <div>
+                      <h5>GoPro Photos & Videos</h5>
+                      <p>Underwater Photography /GoPro 13 Camera / Can be Rented</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary mt-3">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="reservation-image">
+              <img src="assets/img/snorkeling//Turtle_snorkeling.jpg" alt="Turtle Snorkeling Mirissa" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Special Turtle Snorkeling Section -->
+
+
+    <!-- Tours / Packages Section -->
+    <section id="packages" class="menu section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Menu</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2 class="text-warning" style="text-shadow: 0 0 12px rgba(255, 208, 0, 0.65);">Our Tours & Packages</h2>
+        <p>Choose your ocean adventure — from gentle turtle snorkeling to thrilling whale encounters and more.</p>
+      </div>
 
       <div class="container" data-aos="fade-up">
 
@@ -288,314 +351,162 @@
           <div class="menu-filters isotope-filters mb-5">
             <ul>
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-main">Main Courses</li>
-              <li data-filter=".filter-dessert">Desserts</li>
-              <li data-filter=".filter-drinks">Drinks</li>
+              <li data-filter=".filter-dive">Scuba & Diving</li>
+              <li data-filter=".filter-snorkel">Snorkeling</li>
+              <li data-filter=".filter-whale">Whale Tours</li>
+              <li data-filter=".filter-boat">Boat Tours</li>
             </ul>
           </div>
 
           <div class="menu-container isotope-container row gy-4">
 
-            <!-- Regular Menu Items -->
-            <div class="col-lg-6 isotope-item filter-starters">
+            <!-- Turtle Snorkeling -->
+            <div class="col-lg-6 isotope-item filter-snorkel">
               <div class="menu-item d-flex align-items-center gap-4">
-                <img src="assets/img/restaurant/starter-2.webp" alt="Starter" class="menu-img img-fluid rounded-3">
+                <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" alt="Turtle Snorkeling" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Bruschetta Trio <span class="menu-tag">Vegetarian</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$8.95</div>
+                  <h5>Snorkeling With Turtles <span class="menu-tag">2 hrs</span></h5>
+                  <p>Swim with gentle sea turtles, explore vibrant coral reefs and tropical fish in crystal-clear waters — ideal for beginners and nature lovers.</p>
+                  <div class="price">$30 per person</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-starters">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/starter-5.webp" alt="Starter" class="menu-img img-fluid rounded-3">
+            <!-- Night Snorkeling -->
+            <div class="col-lg-6 isotope-item filter-snorkel">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" alt="Night Snorkeling" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Calamari Fritti <span class="menu-tag">Seafood</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$10.95</div>
+                  <h5>Night Snorkeling Adventure <span class="menu-tag">~2 hrs</span></h5>
+                  <p>Experience the reef after sunset — glowing plankton, nocturnal sea life, and a magical underwater world under moonlit waters. Includes dive light & safety gear.</p>
+                  <div class="price">US $40 per person</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-main">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/main-1.webp" alt="Main Course" class="menu-img img-fluid rounded-3">
+            <!-- Scuba Diving / Diving Tour -->
+            <div class="col-lg-6 isotope-item filter-dive">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/Scuba_diving.jpg" alt="Scuba Diving" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Wild Mushroom Risotto <span class="menu-tag">Vegetarian</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$18.95</div>
+                  <h5>Scuba Diving & Dive Tours <span class="menu-tag">1 hr +</span></h5>
+                  <p>Explore deeper reefs, colorful corals, and vibrant marine life with professional dive guides. Suitable for both beginners and certified divers.</p>
+                  <div class="price">Variable — contact for pricing</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-main">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/main-4.webp" alt="Main Course" class="menu-img img-fluid rounded-3">
+            <!-- Scuba / Night Diving -->
+            <div class="col-lg-6 isotope-item filter-dive">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/Scuba_diving.jpg" alt="Night Diving" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Braised Lamb Shank <span class="menu-tag">Chef's Choice</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$26.95</div>
+                  <h5>Night Diving Experience <span class="menu-tag">1–2 hrs</span></h5>
+                  <p>Dive under the stars with professional gear and lights. Explore deeper reefs, nocturnal marine life, and enjoy an unforgettable underwater adventure after dark. Ideal for certified divers.</p>
+                  <div class="price">US $80 per diver</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-dessert">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/dessert-2.webp" alt="Dessert" class="menu-img img-fluid rounded-3">
+            <!-- Whale Snorkeling / Whale Watching -->
+            <div class="col-lg-6 isotope-item filter-whale">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/whale_watching.jpg" alt="Whale Watching" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Chocolate Lava Cake <span class="menu-tag">Gluten Free</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$9.95</div>
+                  <h5>Whale Watching / Snorkeling Tour <span class="menu-tag">3-4 hrs</span></h5>
+                  <p>Set out early to meet majestic blue whales, dolphins and other marine giants. Boat-based adventure with experienced crew, ideal for thrill seekers.</p>
+                  <div class="price">From $250 per person</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-dessert">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/dessert-7.webp" alt="Dessert" class="menu-img img-fluid rounded-3">
+            <!-- Boat Tour (coastal / dolphin watching) -->
+            <div class="col-lg-6 isotope-item filter-boat">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/whale_watching.jpg" alt="Boat Tour" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Tiramisu <span class="menu-tag">Classic</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$8.95</div>
+                  <h5>Boat Tour & Coastal Sightseeing <span class="menu-tag">2 hrs</span></h5>
+                  <p>Enjoy relaxing coastal boat rides, scenic views, dolphin watching and hidden coves around Mirissa’s beautiful coastline.</p>
+                  <div class="price">$40 per person</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-drinks">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/drink-3.webp" alt="Drink" class="menu-img img-fluid rounded-3">
+            <!-- Coastal / Light-Sea Fishing (optional) -->
+            <div class="col-lg-6 isotope-item filter-boat">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/Fising_tours.jpg" alt="Coastal Fishing" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Signature Cocktail <span class="menu-tag">Alcoholic</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$12.95</div>
+                  <h5>Coastal Fishing / Light-Sea Fishing <span class="menu-tag">2–3 hrs</span></h5>
+                  <p>Enjoy a relaxed fishing trip near the coast — ideal for families or those who prefer calmer seas. All gear provided, and catch-and-release or traditional fishing available.</p>
+                  <div class="price">From US $60 per person</div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 isotope-item filter-drinks">
-              <div class="d-flex menu-item align-items-center gap-4">
-                <img src="assets/img/restaurant/drink-8.webp" alt="Drink" class="menu-img img-fluid rounded-3">
+            <!-- Deep Sea Fishing -->
+            <div class="col-lg-6 isotope-item filter-boat">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="assets/img/snorkeling/Fising_tours.jpg" alt="Deep Sea Fishing" class="menu-img img-fluid rounded-3">
                 <div class="menu-content">
-                  <h5>Berry Smoothie <span class="menu-tag">Non-Alcoholic</span></h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur sed.</p>
-                  <div class="price">$7.95</div>
+                  <h5>Deep Sea Fishing Tours <span class="menu-tag">4 hrs</span></h5>
+                  <p>Set out into deep ocean waters with our experienced crew. All fishing gear, bait, and safety equipment provided. Perfect for seasoned anglers and first-timers alike.</p>
+                  <div class="price">From US $120 per person</div>
                 </div>
               </div>
             </div>
+
           </div>
 
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up">
-          <a href="#" class="download-menu">
-            <i class="bi bi-file-earmark-pdf"></i> Download Full Menu
-          </a>
-        </div>
-
-        <!-- Chef's Specials -->
-        <div class="col-12 mt-5" data-aos="fade-up">
-          <div class="specials-badge">
-            <span><i class="bi bi-award"></i> Chef's Specials</span>
-          </div>
-          <div class="specials-container">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="menu-item special-item">
-                  <div class="menu-item-img">
-                    <img src="assets/img/restaurant/main-3.webp" alt="Special Dish" class="img-fluid">
-                    <div class="menu-item-badges">
-                      <span class="badge-special">Special</span>
-                      <span class="badge-vegan">Vegan</span>
-                    </div>
-                  </div>
-                  <div class="menu-item-content">
-                    <h4>Mediterranean Grilled Salmon</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut aliquam metus. Vivamus fermentum magna quis.</p>
-                    <div class="menu-item-price">$24.99</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="menu-item special-item">
-                  <div class="menu-item-img">
-                    <img src="assets/img/restaurant/main-7.webp" alt="Special Dish" class="img-fluid">
-                    <div class="menu-item-badges">
-                      <span class="badge-special">Special</span>
-                      <span class="badge-spicy">Spicy</span>
-                    </div>
-                  </div>
-                  <div class="menu-item-content">
-                    <h4>Signature Ribeye Steak</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan risus ut dui pretium, eget elementum nisi.</p>
-                    <div class="menu-item-price">$32.99</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>
+    </section>
+    <!-- /Tours / Packages Section -->
 
-    </section><!-- /Menu Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
+        <h2 class="text-warning" style="text-shadow: 0 0 12px rgba(255, 208, 0, 0.65);">Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="container">
+        <div class="elfsight-app-3243bd4a-df23-4007-8572-ba703f2c99d0" data-elfsight-app-lazy></div>
       </div>
 
     </section><!-- /Testimonials Section -->
+
 
     <!-- Chefs Section -->
     <section id="chefs" class="chefs section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Chefs</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2  class="text-warning" style="text-shadow: 0 0 12px rgba(255, 208, 0, 0.65);">Gallery</h2>
+        <p>Real moments from our snorkeling and ocean adventures in Mirissa, Sri Lanka</p>
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row">
-          <div class="col-lg-5">
+          <div class="col-lg-5 mb-3">
             <div class="chef-highlight" data-aos="fade-right" data-aos-delay="200">
               <figure class="chef-image">
-                <img src="assets/img/restaurant/chef-1.webp" class="img-fluid" alt="Executive Chef">
+                <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" class="img-fluid" alt="Snorkeling Highlight">
               </figure>
               <div class="chef-details">
-                <h3>Executive Chef</h3>
-                <h2>Gabriel Turner</h2>
+                <h3>Featured Adventure</h3>
+                <h2>Turtle Snorkeling Mirissa</h2>
                 <div class="chef-awards">
-                  <span><i class="bi bi-star-fill"></i> James Beard Award</span>
-                  <span><i class="bi bi-star-fill"></i> Two Michelin Stars</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit.</p>
-                <div class="chef-signature">
-                  <img src="assets/img/misc/signature-1.webp" alt="Chef Signature">
+                  <span><i class="bi bi-camera-fill"></i> GoPro Photos</span>
+                  <span><i class="bi bi-award-fill"></i> Top Rated Experience</span>
                 </div>
               </div>
             </div>
@@ -604,20 +515,11 @@
           <div class="col-lg-7">
             <div class="team-container" data-aos="fade-left" data-aos-delay="300">
               <div class="row g-4">
+
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-2.webp" class="img-fluid" alt="Chef Portrait">
-                      <div class="social-links">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                      </div>
-                    </div>
-                    <div class="chef-info">
-                      <h4>Sophia Martinez</h4>
-                      <p class="role">Pastry Chef</p>
-                      <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
+                      <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" class="img-fluid" alt="Turtle Snorkeling">
                     </div>
                   </div>
                 </div>
@@ -625,17 +527,7 @@
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="250">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-3.webp" class="img-fluid" alt="Chef Portrait">
-                      <div class="social-links">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                      </div>
-                    </div>
-                    <div class="chef-info">
-                      <h4>Marcus Chen</h4>
-                      <p class="role">Sous Chef</p>
-                      <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
+                      <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" class="img-fluid" alt="Coral Reef">
                     </div>
                   </div>
                 </div>
@@ -643,17 +535,7 @@
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-4.webp" class="img-fluid" alt="Chef Portrait">
-                      <div class="social-links">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                      </div>
-                    </div>
-                    <div class="chef-info">
-                      <h4>Jonathan Williams</h4>
-                      <p class="role">Head of Bar</p>
-                      <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
+                      <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" class="img-fluid" alt="Whale Watching">
                     </div>
                   </div>
                 </div>
@@ -661,138 +543,23 @@
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="350">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-5.webp" class="img-fluid" alt="Chef Portrait">
-                      <div class="social-links">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                      </div>
-                    </div>
-                    <div class="chef-info">
-                      <h4>Isabella Romano</h4>
-                      <p class="role">Grill Master</p>
-                      <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
+                      <img src="assets/img/snorkeling/Turtle_snorkeling.jpg" class="img-fluid" alt="Scuba Diving">
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
+
         </div>
 
       </div>
 
-    </section><!-- /Chefs Section -->
+    </section>
+    <!-- /Chefs Section -->
 
-    <!-- Book A Table Section -->
-    <section id="book-a-table" class="book-a-table section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5 mb-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="reservation-info">
-              <div class="text-content">
-                <h3>Book Your Table</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Aliquam erat volutpat.</p>
-
-                <div class="reservation-details mt-4">
-                  <div class="detail-item">
-                    <i class="bi bi-clock"></i>
-                    <div>
-                      <h5>Opening Hours</h5>
-                      <p>Monday - Friday: 11:00 AM - 11:00 PM<br>
-                        Saturday - Sunday: 10:00 AM - 12:00 AM</p>
-                    </div>
-                  </div>
-
-                  <div class="detail-item">
-                    <i class="bi bi-geo-alt"></i>
-                    <div>
-                      <h5>Location</h5>
-                      <p>1234 Main Street, Suite 100<br>
-                        Boston, MA 02110</p>
-                    </div>
-                  </div>
-
-                  <div class="detail-item">
-                    <i class="bi bi-telephone"></i>
-                    <div>
-                      <h5>Call Us</h5>
-                      <p>+1 (617) 555-1234</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="reservation-image">
-              <img src="assets/img/restaurant/showcase-7.webp" alt="Restaurant interior" class="img-fluid rounded">
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-            <div class="reservation-form-wrapper">
-              <div class="form-header">
-                <h3>Book A Table</h3>
-                <p>Please fill the form below to make a reservation</p>
-              </div>
-
-              <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form mt-4">
-                <div class="row gy-4">
-                  <div class="col-lg-4 form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-                  <div class="col-lg-4 form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-                  <div class="col-lg-4 form-group">
-                    <input type="text" class="form-control" name="phone" placeholder="Your Phone" required="">
-                  </div>
-                  <div class="col-lg-4 form-group">
-                    <select name="people" class="form-select" required="">
-                      <option value="">Number of guests</option>
-                      <option value="1">1 Person</option>
-                      <option value="2">2 People</option>
-                      <option value="3">3 People</option>
-                      <option value="4">4 People</option>
-                      <option value="5">5 People</option>
-                      <option value="6">6+ People</option>
-                    </select>
-                  </div>
-                  <div class="col-lg-4 form-group">
-                    <input type="date" name="date" class="form-control" placeholder="Date" required="">
-                  </div>
-                  <div class="col-lg-4 form-group">
-                    <input type="time" class="form-control" name="time" id="time" placeholder="Time" required="">
-                  </div>
-
-                  <div class="form-group mt-4">
-                    <textarea class="form-control" name="message" rows="3" placeholder="Special Requests (Optional)"></textarea>
-                  </div>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-                </div>
-
-                <div class="text-center mt-4">
-                  <button type="submit" class="btn-book-table">Book Now</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Book A Table Section -->
 
     <!-- Location Section -->
     <section id="location" class="location section">
@@ -1013,128 +780,6 @@
 
     </section><!-- /Events Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <!-- Contact Info Boxes -->
-        <div class="row gy-4 mb-5">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4>Our Address</h4>
-                <p>1842 Maple Avenue, Portland, Oregon 97204</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="info-content">
-                <h4>Email Address</h4>
-                <p>info@example.com</p>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-info-box">
-              <div class="icon-box">
-                <i class="bi bi-headset"></i>
-              </div>
-              <div class="info-content">
-                <h4>Hours of Operation</h4>
-                <p>Sunday-Fri: 9 AM - 6 PM</p>
-                <p>Saturday: 9 AM - 4 PM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Google Maps (Full Width) -->
-      <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <!-- Contact Form Section (Overlapping) -->
-      <div class="container form-container-overlap">
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-10">
-            <div class="contact-form-wrapper">
-              <h2 class="text-center mb-4">Get in Touch</h2>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-person"></i>
-                        <input type="text" class="form-control" name="name" placeholder="First Name" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-text-left"></i>
-                        <input type="text" class="form-control" name="sbject" placeholder="Subject" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-chat-dots message-icon"></i>
-                        <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
 
   </main>
 
@@ -1142,65 +787,63 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
+
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">NiceRestaurant</span>
+            <span class="sitename">Snorkeling In Mirissa</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Join us for unforgettable ocean adventures in Mirissa! Swim with sea turtles, explore vibrant coral reefs, and enjoy professional guidance from our friendly local team.</p>
+
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Our Tours</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Turtle Snorkeling</a></li>
+            <li><a href="#">Whale Watching</a></li>
+            <li><a href="#">Scuba Diving</a></li>
+            <li><a href="#">Night Snorkeling</a></li>
+            <li><a href="#">Deep Fishing Tours</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Snorkeling In Mirissa</p>
+          <p>Mirissa, Sri Lanka</p>
+          <p class="mt-4"><strong>Phone:</strong><span>+94 71 945 7757</span></p>
+          <p><strong>Email:</strong> <span>info@snorkelinginmirissa.com</span></p>
         </div>
 
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">NiceRestaurant</strong> <span>All Rights Reserved</span></p>
+    <div class="container copyright text-center mt-3">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Snorkeling In Mirissa</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed & Developed by WebMind Innovations
       </div>
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -1223,3 +866,18 @@
 </body>
 
 </html>
+
+<script>
+  const turtle = document.getElementById("turtle");
+
+  function startTurtleAnimation() {
+    const rect = turtle.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      turtle.classList.add("turtle-animate");
+      window.removeEventListener("scroll", startTurtleAnimation);
+    }
+  }
+
+  window.addEventListener("scroll", startTurtleAnimation);
+
+</script>
