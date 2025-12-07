@@ -1,15 +1,4 @@
-/**
-* Template Name: NiceRestaurant
-* Template URL: https://bootstrapmade.com/nice-restaurant-bootstrap-template/
-* Updated: May 30 2025 with Bootstrap v5.3.6
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -19,10 +8,10 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: rgba(16, 23, 25, 0); /* Background color for the entire website, including individual sections */
+  --background-color: rgba(16, 25, 17, 0); /* Background color for the entire website, including individual sections */
   --default-color: #f1f3f5; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #f4f7fa; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ceaf7f; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #1ba503; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #252a2b; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,18 +19,18 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #f1f3f5;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ceaf7f; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #243438; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #243438; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-hover-color: #1ba503; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #24382a; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #253824; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #f1f3f5; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ceaf7f; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #1ba503; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #243438;
-  --surface-color: #385157;
+  --background-color: #243829;
+  --surface-color: #3c5738;
 }
 
 .dark-background {
@@ -67,7 +56,7 @@ body {
 }
 
 body::before {
-  background: linear-gradient(color-mix(in srgb, #000000, transparent 30%), color-mix(in srgb, #000000, transparent 30%)), url("../img/bg/abstract-bg-4.webp") no-repeat center center/cover;
+  background: linear-gradient(color-mix(in srgb, #000000, transparent 30%), color-mix(in srgb, #000000, transparent 30%)), url("../img/bg/background_image_2.jpg") no-repeat center center/cover;
   content: "";
   position: fixed;
   inset: 0;
@@ -154,7 +143,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 5px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -164,7 +153,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 65px;
   margin-right: 8px;
 }
 
@@ -471,11 +460,12 @@ h6 {
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+  backdrop-filter: blur(3px);
+  border-top: 2px solid color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .footer .footer-top {
   padding-top: 50px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-about .logo {
@@ -568,8 +558,8 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
@@ -624,7 +614,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: -15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -1255,10 +1245,12 @@ section,
   font-weight: 500;
   cursor: pointer;
   border-radius: 25px;
-  background-color: var(--surface-color);
+  background: rgba(106, 255, 69, 0.2);
   color: var(--default-color);
   transition: 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(255, 238, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .menu .menu-filters ul li:hover {
@@ -1266,7 +1258,8 @@ section,
 }
 
 .menu .menu-filters ul li.filter-active {
-  background-color: var(--accent-color);
+  background: rgba(255, 178, 69, 0.482);
+  backdrop-filter: blur(3px);
   color: var(--contrast-color);
 }
 
@@ -1395,9 +1388,12 @@ section,
 .menu .menu-item {
   padding: 20px;
   border-radius: 8px;
-  background-color: var(--surface-color);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 223, 80, 0.08);
   transition: all 0.3s ease;
+  min-height: 200px;
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
 }
 
 .menu .menu-item:hover {
@@ -1786,6 +1782,12 @@ section,
 --------------------------------------------------------------*/
 .book-a-table {
   position: relative;
+}
+
+.book-a-table .turtle_snorkeling {
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 222, 77, 0.6);
 }
 
 .book-a-table h3 {
@@ -2657,9 +2659,372 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+/* Hero Container */
+.carousel-item {
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: heroZoom 12s ease-in-out infinite alternate;
 }
+
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.07); }
+}
+
+/* Caption Animation */
+.carousel-caption {
+  bottom: 32%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.9s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text Styles */
+.carousel-caption h5 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+  margin-top: 15px;
+  font-weight: 400;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.85);
+}
+
+/* Buttons */
+.btn-custom {
+  margin: 6px;
+  padding: 12px 28px;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+/* Gradient Overlay */
+.carousel-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 20, 50, 0.4),
+    rgba(0, 0, 0, 0.75)
+  );
+  z-index: 0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    padding: 8px 20px;
+  }
+}
+
+/* Very Small Screen */
+@media (max-width: 480px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🌊 Wave Animation for Buttons */
+.btn-custom {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-custom::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  transform: translateY(8px);
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-custom:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 🐢 Floating Marine Icons */
+.floating-icon {
+  position: absolute;
+  opacity: 0.85;
+  animation: floatObject 6s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes floatObject {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Icons Position Per Slide */
+.slide-1 .floating-icon { top: 65%; left: 12%; }
+.slide-2 .floating-icon { top: 28%; right: 10%; }
+.slide-3 .floating-icon { bottom: 18%; left: 20%; }
+.slide-4 .floating-icon { top: 30%; right: 16%; }
+
+
+/* 🌟 Liquid Glass Style for About Section */
+.chef-signature,
+.feature-box,
+.stats-container {
+  background: rgba(255, 208, 0, 0.08); /* very light dark-yellow tint */
+  backdrop-filter: blur(5px) saturate(150%);
+  -webkit-backdrop-filter: blur(5px) saturate(150%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 208, 0, 0.25);
+  box-shadow: 0 0 10px rgba(255, 248, 219, 0.25);
+  padding: 25px;
+}
+
+/* Cards Hover Shine */
+.feature-box {
+  transition: 0.35s ease-in-out;
+}
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(250, 244, 213, 0.45);
+}
+
+/* Stats Liquid Glass */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 35px;
+}
+.stat-item {
+  text-align: center;
+  color: #fff;
+}
+
+/* Stat Numbers */
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffd600;
+  text-shadow: 0 0 15px rgba(250, 230, 144, 0.6);
+}
+
+/* Left content liquid effect */
+.about-content {
+  color: #fff;
+}
+.about-content h3 {
+  font-size: 2rem;
+  color: #ffd600;
+  margin-bottom: 10px;
+  text-shadow: 0 0 12px rgba(255, 208, 0, 0.65);
+}
+.chef-name {
+  color: #ffd600;
+  font-weight: 600;
+}
+
+/* Image floating elevation */
+.about-image-wrapper img {
+  border-radius: 18px;
+  box-shadow: 0 0 18px rgba(255, 208, 0, 0.35);
+  transition: 0.35s ease-in-out;
+}
+.about-image-wrapper img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 208, 0, 0.55);
+}
+
+/* 🔸 Accent Glow Around Text Sections */
+.about-content::before,
+.features-section::before,
+.stats-container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 100%;
+  left: 5%;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 208, 0, 0.22),
+    transparent 65%
+  );
+  filter: blur(45px);
+}
+
+
+/* Liquid Glass Hero Effects */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Glass Overlay */
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  /* background: rgba(0, 10, 20, 0.45); */
+  /* backdrop-filter: blur(4px); */
+  z-index: 1;
+}
+
+/* Caption Liquid Glass Look */
+.carousel-caption {
+  bottom: 32%;
+  z-index: 2;
+  padding: 25px 40px;
+  background: rgba(255, 223, 80, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Animate active slide caption */
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glass Text Shine */
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 0 0 12px rgba(255, 204, 0, 0.65);
+}
+
+/* Liquid Glass Buttons */
+.btn-custom {
+  margin: 5px;
+  padding: 10px 28px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 1rem;
+  backdrop-filter: blur(6px);
+  transition: 0.4s ease;
+}
+
+/* Yellow button style */
+.btn-warning.btn-custom {
+  background: rgba(255, 210, 40, 0.75);
+  border: 1px solid rgba(255, 210, 40, 0.9);
+  color: #000;
+  box-shadow: 0 0 18px rgba(255, 200, 0, 0.6);
+}
+
+.btn-warning.btn-custom:hover {
+  background: rgba(255, 210, 40, 1);
+  box-shadow: 0 0 25px rgba(255, 200, 0, 0.9);
+}
+
+/* Transparent button style */
+.btn-outline-light.btn-custom {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.btn-outline-light.btn-custom:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: #fff;
+}
+
+/* Liquid Badge Glow */
+.badge.bg-warning {
+  background: rgba(255, 210, 40, 0.85) !important;
+  box-shadow: 0 0 15px rgba(255, 200, 0, 0.65);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+}
+
+
+
+.turtle-swim {
+  position: fixed;
+  width: 180px;
+  bottom: -150px; 
+  left: -180px;
+  opacity: 0;
+  z-index: 5;
+  pointer-events: none; 
+  transform: rotate(15deg);
+}
+
+.turtle-animate {
+  animation: turtlePath 30s ease-in-out forwards;
+}
+
+@keyframes turtlePath {
+  0% {
+    bottom: -150px;
+    left: -180px;
+    transform: rotate(15deg) scale(2);
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    bottom: 60%;
+    left: 70%;
+    opacity: 100;
+    transform: rotate(0deg) scale(2.5);
+  }
+  100% {
+    bottom: 90%;
+    left: 110%;
+    opacity: 100;
+    transform: rotate(-10deg) scale(2);
+  }
+}
+
