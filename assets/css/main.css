@@ -1973,11 +1973,13 @@ section,
 .location .info-container {
   height: 100%;
   padding: 2rem;
-  background-color: var(--surface-color);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 10px rgba(249, 235, 156, 0.266);
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(255, 213, 0, 0.2);
 }
 
 .location .info-container .section-header {
@@ -2251,6 +2253,9 @@ section,
   border-radius: 12px;
   padding: 2.5rem;
   margin-bottom: 4rem;
+  backdrop-filter: blur(3px);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 20%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
 .events .event-cta h3 {
