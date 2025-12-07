@@ -3055,3 +3055,9 @@ section,
 .whatsapp-button img:hover {
   transform: scale(1.1); /* Slightly larger on hover */
 }
+
+@media (max-width: 576px) {
+  .hero-scuba {
+    font-size: 21px !important;
+  }
+}
